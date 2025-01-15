@@ -1,11 +1,18 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+//import reportWebVitals from './reportWebVitals';
 
-// ReactDOM.render(<App />, document.getElementById("potato"));
-const root = ReactDOM.createRoot(document.getElementById('root')); // root 생성
-root.render(
+const rootNode = document.getElementById('root');
+
+ReactDOM.createRoot(rootNode).render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
 );
+
+// reportWebVitals();
+
+
+
